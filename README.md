@@ -16,7 +16,6 @@ $ npm install --save n-cli
 
 var cli = new require("CLI")({
     silent: false,
-    appname: "node-cli-example-app-1",
     handleUncaughtException : true
 });
 
