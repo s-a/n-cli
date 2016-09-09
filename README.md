@@ -1,5 +1,4 @@
-# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage]
-[![Coverage Status](https://coveralls.io/repos/github/s-a/n-cli/badge.svg?branch=master)](https://coveralls.io/github/s-a/n-cli?branch=master)
+# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/github/s-a/n-cli/badge.svg?branch=master)](https://coveralls.io/github/s-a/n-cli?branch=master)
 > a usefull toolset for node commandline applications
 
 ## Installation
@@ -55,7 +54,9 @@ $ your-client-app unicorn --rainbow forever;
 $ your-client-app unicorn --rainbow ;
 
 # yields : missing-parameter-value missing value for parameter rainbow.
-``` 
+```
+
+
 
 ## License
 
