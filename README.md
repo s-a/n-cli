@@ -1,4 +1,5 @@
-# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage]
+[![Coverage Status](https://coveralls.io/repos/github/s-a/n-cli/badge.svg?branch=master)](https://coveralls.io/github/s-a/n-cli?branch=master)
 > a usefull toolset for node commandline applications
 
 ## Installation
@@ -15,6 +16,7 @@ $ npm install --save n-cli
 "use strict";
 
 var cli = new require("CLI")({
+    silent: false,
     appname: "node-cli-example-app-1",
     handleUncaughtException : true
 });
@@ -28,7 +30,7 @@ cli.on("unicorn", function(){
 $ your-client-app unicorn --rainbow forever;
 
 # yields :
-{ 
+{
   prettyError:
    PrettyError { },
   init:
@@ -53,7 +55,8 @@ $ your-client-app unicorn --rainbow forever;
 $ your-client-app unicorn --rainbow ;
 
 # yields : missing-parameter-value missing value for parameter rainbow.
-```
+``` 
+
 ## License
 
 MIT © [s-a](https://github.com/s-a)
