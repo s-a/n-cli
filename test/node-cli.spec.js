@@ -76,6 +76,11 @@ describe("node command line interface", function () {
     cli.log({text:"grummel?"}).outputbuffer[0].should.deepEqual({text: "grummel?"});
   });
 
+  it("should resolve path", function () {
+    var cli = new CLI({silent:false, appname: appname, argv: ["dir"]});
+    cli.log(cli.resolvePath("."));
+  });
+
   it("should log done? to console", function () {
     var cli = new CLI({silent:false, appname: appname, argv: ["dir"]});
     cli.log({text:"done?"}).outputbuffer[0].should.deepEqual({text: "done?"});
