@@ -3,7 +3,7 @@
 process.env.NODE_ENV = "test";
 
 var CLI = require("../lib");
-var should = require("should"); 
+var should = require("should");
 var NodeCliError = require("./../lib/error.js");
 var appname = "node-cli-test-spec";
 
@@ -15,13 +15,7 @@ describe("node command line interface", function () {
       cli.on("ls", "doh!");
     }).throw("api-expect-config-argument");
   });
-
-  it("should throw api-expect-config-argument appname", function () {
-    should(function(){
-      var cli = new CLI({});
-      cli.on("ls", "doh!");
-    }).throw("api-expect-config-argument");
-  });
+ 
 
 /*  it("should throw command-not-found", function () {
     should(function(){
@@ -88,7 +82,6 @@ describe("node command line interface", function () {
   });
 
   it("should throw yolo-test-error", function () {
-    debugger;
     var cli = new CLI({handleUncaughtException:true, silent:false, appname: appname, argv: ["dir"]});
     try {
       throw new NodeCliError("yolo-test-error", "!doh");

@@ -30,7 +30,7 @@
         "space-in-parens" : "off",
         "semi-spacing": "off",
         "no-useless-concat": "off",
-        "max-lines": ["warn", 130],
+        "max-lines": ["warn", 330],
         "no-lonely-if" :"off",
         "space-infix-ops" : "warn",
         "camelcase" : "off",
