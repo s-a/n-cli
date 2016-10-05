@@ -56,7 +56,8 @@ $ your-client-app unicorn --rainbow ;
 # yields : missing-parameter-value missing value for parameter rainbow.
 ```
 
-
+## Demo
+https://www.youtube.com/watch?v=m53SlSaP6cs
 
 ## License
 
