@@ -14,9 +14,10 @@ $ npm install --save n-cli
 
 "use strict";
 
-var cli = new require("CLI")({
-    silent: false,
-    handleUncaughtException : true
+var Cli = new require("n-cli");
+var cli = new Cli({
+  silent: false,
+  handleUncaughtException : true
 });
 
 cli.on("unicorn", function(){
