@@ -65,12 +65,20 @@ MIT © [s-a](https://github.com/s-a)
 
 ## API
 
-### CLI 
-.prettyError Returns an instance of ```pretty-error```.  
-.argv Returns an instance of ```minimist```.  
-.color Returns an instance of ```chalk```.  
-.config Returns an instance of ```user-appdata```.  
-.Error Returns class of ```n-cli.Error```.(config) 
+# CLI
+
+**Members:**
+
++ **prettyError** [https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)
++ **argv** parsed arguments of [https://github.com/substack/minimist](https://github.com/substack/minimist)
++ **chalk** [https://github.com/chalk/chalk](https://github.com/chalk/chalk)
++ **Error**
++ **Minimist** [https://github.com/substack/minimist](https://github.com/substack/minimist)
++ **config** [https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
+
+* * *
+
+### CLI(config)
 
 **Parameters**
 
@@ -79,14 +87,14 @@ MIT © [s-a](https://github.com/s-a)
 
 **Example**:
 ```js
-{
+var cli = new CLI({
   silent: false,
   handleUncaughtException : true
-}
+})
 ```
 
 
-### resolvePath(fileOrDir) 
+### CLI.resolvePath(fileOrDir)
 
 Resolve a path
 
@@ -97,7 +105,7 @@ Resolve a path
 **Returns**: `string`, Absolute directory name relative to the current working directory of process.
 
 
-### findup(basedir, filename) 
+### CLI.findup(basedir, filename)
 
 Find a file in parent directories.
 
@@ -110,15 +118,15 @@ Find a file in parent directories.
 **Returns**: `string`, Absolute directory to given ```filename```.
 
 
-### programInfo() 
+### CLI.programInfo()
 
 Output program informations based on ```package.json``` to console.
 
 
 
-### on(commandName, commandFunction) 
+### CLI.on(commandName, commandFunction)
 
-Catch a commandline switch case.
+Catch a commandline switch case. The commandFunction runs in context of CLI.
 
 **Parameters**
 
@@ -128,33 +136,39 @@ Catch a commandline switch case.
 
 
 
-### silent() 
+### CLI.silent()
 
 Determines of console app is running in silent mode. Silent mode activates automaticaly when ```process.env.NODE_ENV === "test"```.
 
 
 
-### log() 
+### CLI.log()
 
 Like console.log put implements util.inspect.
 
 
 
-### error() 
+### CLI.error()
 
 Like console.error put implements util.inspect.
 
 
 
-### stdout() 
+### CLI.stdout()
 
 Wrapper for process.stdout.write
 
 
 
-### stderr() 
+### CLI.stderr()
 
 Wrapper for process.stderr.write
+
+
+
+
+* * *
+
 
 
 
