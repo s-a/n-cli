@@ -1,13 +1,7 @@
-# CLI
+# Global
 
 
 
-**Requires:**
-
-+ module:[https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)
-+ module:[https://github.com/substack/minimist](https://github.com/substack/minimist)
-+ module:[https://github.com/chalk/chalk](https://github.com/chalk/chalk)
-+ module:[https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
 
 
 * * *
@@ -15,13 +9,13 @@
 ## Class: CLI
 
 
-**prettyError**:  
-**argv**:  
-**chalk**:  
-**Error**:  
-**Minimist**:  
-**config**:  , Instance of ```user-appdata``` [https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
-### CLI.CLI.resolvePath(fileOrDir) 
+**.prettyError**: `PrettyError` , Instance of [https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)  .
+**.argv**: `object` , Parsed result of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
+**.color**: `Chalk` , Instance of [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  .
+**.Error**: `CLI.Error` , Constructor to create a new instance of custom n-cli Error  .
+**.minimist**: `Minimist` , Instance of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
+**.config**: `user-appdata` , Instance of ```user-appdata``` [https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
+### CLI.resolvePath(fileOrDir) 
 
 Resolve a path
 
@@ -31,7 +25,7 @@ Resolve a path
 
 **Returns**: `string`, Absolute directory name relative to the current working directory of process.
 
-### CLI.CLI.findup(basedir, filename) 
+### CLI.findup(basedir, filename) 
 
 Find a file in parent directories.
 
@@ -43,12 +37,12 @@ Find a file in parent directories.
 
 **Returns**: `string`, Absolute directory to given ```filename```.
 
-### CLI.CLI.programInfo() 
+### CLI.programInfo() 
 
 Output program informations based on ```package.json``` to console.
 
 
-### CLI.CLI.on(commandName, commandFunction) 
+### CLI.on(commandName, commandFunction) 
 
 Catch a commandline switch case. The commandFunction runs in context of CLI.
 
@@ -59,27 +53,27 @@ Catch a commandline switch case. The commandFunction runs in context of CLI.
 **commandFunction**: `function`, An event handler function.
 
 
-### CLI.CLI.silent() 
+### CLI.silent() 
 
 Determines of console app is running in silent mode. Silent mode activates automaticaly when ```process.env.NODE_ENV === "test"```.
 
 
-### CLI.CLI.log() 
+### CLI.log() 
 
 Like console.log put implements util.inspect.
 
 
-### CLI.CLI.error() 
+### CLI.error() 
 
 Like console.error put implements util.inspect.
 
 
-### CLI.CLI.stdout() 
+### CLI.stdout() 
 
 Wrapper for process.stdout.write
 
 
-### CLI.CLI.stderr() 
+### CLI.stderr() 
 
 Wrapper for process.stderr.write
 
