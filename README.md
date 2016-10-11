@@ -25,6 +25,7 @@ cli.on("unicorn", function(){
     this.log(this);
 });
 ```
+
 ```sh
 $ your-client-app unicorn --rainbow forever;
 
@@ -50,11 +51,14 @@ $ your-client-app unicorn --rainbow forever;
   minimist: [Function]
 }
 ```
+
 ```sh
 $ your-client-app unicorn --rainbow ;
 
 # yields : missing-parameter-value missing value for parameter rainbow.
 ```
+## API
+ - [API description](API.md)
 
 ## Demo
 https://www.youtube.com/watch?v=m53SlSaP6cs
@@ -63,100 +67,7 @@ https://www.youtube.com/watch?v=m53SlSaP6cs
 
 MIT © [s-a](https://github.com/s-a)
 
-## API
-
-### CLI 
-.prettyError Returns an instance of ```pretty-error```.  
-.argv Returns an instance of ```minimist```.  
-.color Returns an instance of ```chalk```.  
-.config Returns an instance of ```user-appdata```.  
-.Error Returns class of ```n-cli.Error```.(config) 
-
-**Parameters**
-
-**config**: `object`, configuration.
-
-
-**Example**:
-```js
-{
-  silent: false,
-  handleUncaughtException : true
-}
-```
-
-
-### resolvePath(fileOrDir) 
-
-Resolve a path
-
-**Parameters**
-
-**fileOrDir**: `string`, Filename or directory
-
-**Returns**: `string`, Absolute directory name relative to the current working directory of process.
-
-
-### findup(basedir, filename) 
-
-Find a file in parent directories.
-
-**Parameters**
-
-**basedir**: `string`, In most cases the current directory of process.
-
-**filename**: `string`, Filename to find.
-
-**Returns**: `string`, Absolute directory to given ```filename```.
-
-
-### programInfo() 
-
-Output program informations based on ```package.json``` to console.
-
-
-
-### on(commandName, commandFunction) 
-
-Catch a commandline switch case.
-
-**Parameters**
-
-**commandName**: `string`, A command you want to process. For example ```push``` or ```commit```.
-
-**commandFunction**: `function`, An event handler function.
-
-
-
-### silent() 
-
-Determines of console app is running in silent mode. Silent mode activates automaticaly when ```process.env.NODE_ENV === "test"```.
-
-
-
-### log() 
-
-Like console.log put implements util.inspect.
-
-
-
-### error() 
-
-Like console.error put implements util.inspect.
-
-
-
-### stdout() 
-
-Wrapper for process.stdout.write
-
-
-
-### stderr() 
-
-Wrapper for process.stderr.write
-
-
+ 
 
 [npm-image]: https://badge.fury.io/js/n-cli.svg
 [npm-url]: https://npmjs.org/package/n-cli

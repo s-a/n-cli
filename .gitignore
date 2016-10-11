@@ -264,3 +264,4 @@ __pycache__/
 /build
 /coverage 
 /output
+/.vscode/cSpell.json

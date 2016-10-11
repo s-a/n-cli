@@ -41,7 +41,8 @@
   },
   "repository": "https://github.com/s-a/n-cli.git",
   "scripts": {
-    "docs": "jsdox lib/index.js",
+    "docs:lib": "jsdox lib/index.js && cp ./output/index.md ./API.md",
+    "docs": "npm run docs:lib",
     "prepublish": "gulp prepublish",
     "test": "gulp coveralls",
     "mocha-test": "iron-node node_modules/mocha/bin/_mocha",
