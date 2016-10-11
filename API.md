@@ -10,8 +10,8 @@
 
 
 **.prettyError**: `PrettyError` , Instance of [https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)  .
-**.argv**: `object` , Parsed result of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
-**.color**: `Chalk` , Instance of [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  .
+**argv**:  , Parsed result of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
+**color**:  , Instance of [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  .
 **.Error**: `CLI.Error` , Constructor to create a new instance of custom n-cli Error  .
 **.minimist**: `Minimist` , Instance of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
 **.config**: `user-appdata` , Instance of ```user-appdata``` [https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
@@ -69,7 +69,7 @@ var cli = new CLI({runcom:".nclirc", handleUncaughtException:true, silent:false 
 
 ### CLI.silent() 
 
-Determines of console app is running in silent mode. Silent mode activates automaticaly when ```process.env.NODE_ENV === "test"```.
+Determines if console app is running in silent mode. Silent mode activates automaticaly when ```process.env.NODE_ENV === "test"```.
 
 
 ### CLI.log() 
