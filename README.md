@@ -17,12 +17,17 @@ $ npm install --save n-cli
 var Cli = new require("n-cli");
 var cli = new Cli({
   silent: false,
-  handleUncaughtException : true
+  handleUncaughtException : true,
+  runcom : ".myapprc"
 });
 
 cli.on("unicorn", function(){
     this.argv.notNull("rainbow");
     this.log(this);
+});
+
+cli.runcom(function(rc){ 
+    this.log(rc);
 });
 ```
 
@@ -57,6 +62,20 @@ $ your-client-app unicorn --rainbow ;
 
 # yields : missing-parameter-value missing value for parameter rainbow.
 ```
+
+## Build in functions
+ncli adds automatically some methods to your commandline application.
+
+```sh
+# output your version number
+$ your-client-app -v;
+```
+
+```sh
+# output help.txt in your projects root folder
+$ your-client-app help;
+```
+
 ## API
  - [API description](API.md)
 
