@@ -1,6 +1,6 @@
 {
   "name": "n-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a usefull toolset for node commandline applications",
   "homepage": "",
   "author": {
@@ -50,6 +50,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.3",
     "minimist": "^1.2.0",
     "pretty-error": "^2.0.0",
     "shelljs": "^0.7.4",
