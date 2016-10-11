@@ -15,22 +15,14 @@ describe("node command line interface", function () {
       cli.on("ls", "doh!");
     }).throw("api-expect-config-argument");
   });
- 
-
-/*  it("should throw command-not-found", function () {
-    should(function(){
-      var cli = new CLI({appname: appname, argv: ["ls"]});
-      cli.on("dir", emptyFunction);
-    }).throw("command-not-found");
-  });
-*/
-  it("should throw excepted-type-is-function", function () {
+  
+  it("should throw expected-type-is-function", function () {
     should(function(){
       var cli = new CLI({appname: appname, argv: ["ls"]});
       cli.on("ls", "doh!");
-    }).throw("excepted-type-is-function");
+    }).throw("expected-type-is-function");
   });
-
+ 
   it("should run a program", function (done) {
     var cli = new CLI({appname: appname, argv: ["dir", "--test", "5"]});
     cli.on("dir", function(){
@@ -107,12 +99,26 @@ describe("node command line interface", function () {
       cli.renderError(err)
     }
   });
-/*
-  it("should throw yolo-test-2-error", function () {
-    var cli = new CLI({handleUncaughtException:true, silent:false, appname: appname, argv: ["dir"]});
+  
 
-    throw new NodeCliError("yolo-test-2-error", "!doh");
+  it("should not find runcom file", function () {
+    var cli = new CLI({runcom:".n-clirc", handleUncaughtException:true, silent:false, appname: appname, argv: ["dir"]});
+    cli.runcom(function(rc){
+      should.not.exist(rc);
+    });
+  }); 
 
-  });*/
+  it("should find runcom file", function () {
+    var cli = new CLI({runcom:".nclirc", handleUncaughtException:true, silent:false, appname: appname, argv: ["dir"]});
+    cli.runcom(function(rc){
+      should.exist(rc);
+      should.exist(rc.dir);
+      should.exist(rc.filename);
+      should.exist(rc.fullpath);
+      should.exist(rc.settings.name);
+      rc.settings.name.should.equal("test");
+      console.log(rc);
+    });
+  }); 
 
 });
