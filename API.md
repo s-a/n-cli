@@ -9,11 +9,11 @@
 ## Class: CLI
 
 
-**.prettyError**: `PrettyError` , Instance of [https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)  .
-**.argv**: `object` , Parsed result of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
-**.color**: `Chalk` , Instance of [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  .
-**.Error**: `CLI.Error` , Constructor to create a new instance of custom n-cli Error  .
-**.minimist**: `Minimist` , Instance of [https://github.com/substack/minimist](https://github.com/substack/minimist)  .
+**.prettyError**: `PrettyError` , Instance of [https://github.com/AriaMinaei/pretty-error](https://github.com/AriaMinaei/pretty-error)  
+**.argv**: `object` , Parsed result of [https://github.com/substack/minimist](https://github.com/substack/minimist)  
+**.color**: `Chalk` , Instance of [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  
+**.Error**: `CLI.Error` , Constructor to create a new instance of custom n-cli Error  
+**.minimist**: `Minimist` , Instance of [https://github.com/substack/minimist](https://github.com/substack/minimist)  
 **.config**: `user-appdata` , Instance of ```user-appdata``` [https://github.com/s-a/user-appdata](https://github.com/s-a/user-appdata)
 ### CLI.resolvePath(fileOrDir) 
 
