@@ -71,10 +71,12 @@ ncli adds automatically some methods to your commandline application.
 $ your-client-app -v;
 ```
 
+Output [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md) in your projects root folder
 ```sh
-# output help.txt in your projects root folder
 $ your-client-app help;
 ```
+
+[![Help Demo][help-demo-image]][help-demo-image]
 
 ## API
  - [API description](API.md)
@@ -96,3 +98,4 @@ MIT © [s-a](https://github.com/s-a)
 [daviddm-url]: https://david-dm.org/s-a/n-cli
 [coveralls-image]: https://coveralls.io/repos/s-a/n-cli/badge.svg
 [coveralls-url]: https://coveralls.io/r/s-a/n-cli
+[help-demo-image]: help-demo.png

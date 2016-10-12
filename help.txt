@@ -1,8 +1,0 @@
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, ...
-
-/?          show this help
-help        show this help
---help      show this help
-version     show version
---version   show version
--v          show version
