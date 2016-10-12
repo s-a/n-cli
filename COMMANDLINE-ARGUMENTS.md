@@ -6,7 +6,7 @@ If no parameters are given the app searches a file called ```.youcoolapprc```. C
 {
     setting1 : true,
     setting2 : false,
-    targetfolder : "./out/
+    targetfolder : "./out/"
 }
 ```
 
