@@ -35,7 +35,7 @@ Output help to console. The ncli tries to find help.txt in your project folder a
 Output version to console.
 
 
-### CLI.findup(basedir, filename) 
+### CLI.findup(basedir, filename, json) 
 
 Find a file in parent directories.
 
@@ -44,6 +44,8 @@ Find a file in parent directories.
 **basedir**: `string`, In most cases the current directory of process.
 
 **filename**: `string`, Filename to find.
+
+**json**: `boolean`, parse text to JSON object if true.
 
 **Returns**: `string`, Absolute directory to given ```filename```.
 
