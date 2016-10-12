@@ -49,7 +49,7 @@ Find a file in parent directories.
 
 ### CLI.programInfo() 
 
-Output program informations based on ```package.json``` to console.
+Output program information based on ```package.json``` to console.
 
 
 ### CLI.on(commandName, commandFunction) 
