@@ -265,3 +265,6 @@ __pycache__/
 /coverage 
 /output
 /.vscode/cSpell.json
+/coverage
+/.nyc_output
+/.vscode

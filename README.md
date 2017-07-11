@@ -1,4 +1,5 @@
-# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/github/s-a/n-cli/badge.svg?branch=master)](https://coveralls.io/github/s-a/n-cli?branch=master)
+# n-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/github/s-a/n-cli/badge.svg?branch=master)](https://coveralls.io/github/s-a/n-cli?branch=master) [![Donate](http://s-a.github.io/donate/donate.svg)](http://s-a.github.io/donate/)
+
 > a usefull toolset for node commandline applications
 
 ## Installation
@@ -17,7 +18,8 @@ $ npm install --save n-cli
 var Cli = new require("n-cli");
 var cli = new Cli({
   silent: false,
-  handleUncaughtException : true,
+  handleUncaughtException : true, // beautifies error output to console
+  handledRejectionPromiseError : true, // beautifyies error output to console
   runcom : ".myapprc"
 });
 
@@ -64,6 +66,7 @@ $ your-client-app unicorn --rainbow ;
 ```
 
 ## Build in functions
+
 ncli adds automatically some methods to your commandline application.
 
 ```sh
@@ -72,6 +75,7 @@ $ your-client-app -v;
 ```
 
 Output [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md) in your projects root folder
+
 ```sh
 $ your-client-app help;
 ```
@@ -79,23 +83,31 @@ $ your-client-app help;
 [![Help Demo][help-demo-image]][help-demo-image]
 
 ## API
- - [API description](API.md)
+
+-   [API description](API.md)
 
 ## Demo
-https://www.youtube.com/watch?v=m53SlSaP6cs
+
+<https://www.youtube.com/watch?v=m53SlSaP6cs>
 
 ## License
 
 MIT © [s-a](https://github.com/s-a)
 
- 
-
 [npm-image]: https://badge.fury.io/js/n-cli.svg
+
 [npm-url]: https://npmjs.org/package/n-cli
+
 [travis-image]: https://travis-ci.org/s-a/n-cli.svg?branch=master
+
 [travis-url]: https://travis-ci.org/s-a/n-cli
+
 [daviddm-image]: https://david-dm.org/s-a/n-cli.svg?theme=shields.io
+
 [daviddm-url]: https://david-dm.org/s-a/n-cli
+
 [coveralls-image]: https://coveralls.io/repos/s-a/n-cli/badge.svg
+
 [coveralls-url]: https://coveralls.io/r/s-a/n-cli
+
 [help-demo-image]: help-demo.png
