@@ -90,15 +90,7 @@ process.env.NODE_ENV = "test";
       }
     }
   });
-
-  it("should throw defaul-js-error", function () {
-    var cli = new CLI({handleUncaughtException:true, silent:silent, appname: appname, argv: ["dir"]});
-    try {
-      throw new Error("defaul-js-error", "!doh");
-    } catch (err) {
-      cli.renderError(err)
-    }
-  });
+ 
   
 
   it("should not find runcom file", function () {
