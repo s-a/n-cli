@@ -35,13 +35,14 @@
     "coveralls": "cat ./coverage/lcov.info | node node_modules/coveralls/bin/coveralls.js",
     "eslint": "node node_modules/eslint/bin/eslint.js ./lib",
     "debug": "iron-node node_modules/mocha/bin/_mocha",
-	"prepublish": "npm test",    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
+    "prepublish": "npm test",
+    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
     "mocha": "node node_modules/mocha/bin/_mocha",
     "test": "npm run eslint && npm run coverage"
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "^2.0.1",
     "minimist": "^1.2.0",
     "pretty-error": "^2.0.0",
     "user-appdata": "^0.1.2"
