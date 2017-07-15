@@ -20,19 +20,11 @@
     "tools"
   ],
   "devDependencies": {
-    "acorn": "^5.1.1",
-    "ajv": "^5.2.2",
-    "coveralls": "^2.13.1",
     "eslint": "^4.2.0",
-    "espree": "^3.4.3",
-    "ignore": "^3.3.3",
-    "lru-cache": "^4.1.1",
     "marked": "^0.3.6",
     "marked-terminal": "^2.0.0",
-    "mocha": "^3.4.2",
     "nyc": "^11.0.3",
-    "should": "^11.2.1",
-    "sigmund": "^1.0.1"
+    "should": "^11.2.1"
   },
   "repository": "https://github.com/s-a/n-cli.git",
   "scripts": {
@@ -43,8 +35,7 @@
     "coveralls": "cat ./coverage/lcov.info | node node_modules/coveralls/bin/coveralls.js",
     "eslint": "node node_modules/eslint/bin/eslint.js ./lib",
     "debug": "iron-node node_modules/mocha/bin/_mocha",
-    "prepublish": "npm test",
-    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
+	"prepublish": "npm test",    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
     "mocha": "node node_modules/mocha/bin/_mocha",
     "test": "npm run eslint && npm run coverage"
   },
