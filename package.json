@@ -43,6 +43,8 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.0.1",
+    "markdown-it": "^8.4.0",
+    "markdown-it-terminal": "^0.1.0",
     "minimist": "^1.2.0",
     "pretty-error": "^2.0.0",
     "user-appdata": "^0.1.2"
