@@ -1,6 +1,6 @@
 {
   "name": "n-cli",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "description": "a usefull toolset for node commandline applications",
   "homepage": "",
   "author": {
@@ -46,7 +46,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-terminal": "^0.1.1",
     "minimist": "^1.2.5",
-    "pretty-error": "^2.1.1",
+    "pretty-error": "^3.0.4",
     "user-appdata": "^0.1.2"
   }
 }
