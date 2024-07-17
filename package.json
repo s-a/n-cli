@@ -20,10 +20,10 @@
     "tools"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.9",
+    "coveralls": "^3.1.1",
     "eslint": "^6.8.0",
-    "mocha": "^7.1.1",
-    "nyc": "^15.0.0",
+    "mocha": "^10.6.0",
+    "nyc": "^17.0.0",
     "should": "^13.2.3"
   },
   "repository": "https://github.com/s-a/n-cli.git",
@@ -42,11 +42,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^3.0.0",
-    "markdown-it": "^10.0.0",
-    "markdown-it-terminal": "^0.1.1",
-    "minimist": "^1.2.5",
-    "pretty-error": "^3.0.4",
+    "chalk": "^4.1.2",
+    "marked": "^13.0.2",
+    "marked-terminal": "^7.1.0",
+    "minimist": "^1.2.8",
+    "pretty-error": "^4.0.0",
     "user-appdata": "^0.1.2"
   }
 }
